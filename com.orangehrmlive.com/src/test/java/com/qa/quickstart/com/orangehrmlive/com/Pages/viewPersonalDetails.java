@@ -1,6 +1,5 @@
 package com.qa.quickstart.com.orangehrmlive.com.Pages;
 
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 

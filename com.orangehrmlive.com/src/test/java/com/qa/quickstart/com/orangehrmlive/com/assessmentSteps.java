@@ -4,7 +4,6 @@ import static org.junit.Assert.*;
 
 import java.util.Random;
 
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.PageFactory;
 
@@ -40,7 +39,8 @@ public class assessmentSteps {
 	public void addEmplyeeTab() {
 		System.setProperty("webdriver.chrome.driver", "C:\\Users\\Admin\\Documents\\AutomatedTesting\\chromedriver.exe");
 		driver = new ChromeDriver();
-		extent= new ExtentReports("C:\\Users\\Admin\\Documents\\AutomatedTesting\\com.orangehrmlive.com\\reports\\extent.html", true);
+		//overrite off to track all tests
+		extent= new ExtentReports("C:\\Users\\Admin\\Documents\\AutomatedTesting\\com.orangehrmlive.com\\reports\\extent.html", false);
 		test1 = extent.startTest("Add an employee to the CRM");
 		
 		driver.navigate().to("http://opensource.demo.orangehrmlive.com/index.php/pim/addEmployee");
