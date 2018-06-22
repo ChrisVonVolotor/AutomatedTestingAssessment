@@ -57,11 +57,10 @@ public class assessmentSteps {
 	@When("^I fill out the Employee Details correctly$")
 	public void fillEmployeeDetails() {
 		//Randomise name to cut down on chance of usernames being rejected because of alrady existing
-		String[] arrstrFirstName = {"John", "Sol", "Michael", "Jillian", "Sandra", "Boris", "Luke", "Steph", "Angela", "Paul"};
-		String[] arrstrMiddleName = {"Peter", "Blaze", "Paras", "Sam", "Kobe", "Liza", "Bort", "Augustus", "Prince", "Drogo"};
-		String[] arrstrLastName = {"Obi", "Wolf", "Vickers", "Wright", "Lazano", "Priestly", "Black", "Ben Hur", "Applecroft", "Patterby"};
+		String[] arrstrFirstName = {"John", "Sol", "Michael", "Jillian", "Sandra", "Boris", "Luke", "Steph", "Angela", "Paul", "Marcus", "Leslie", "Chucky", "Tirza", "Ezra", "Sabine", "Tsubaki", "Gad", "Tristan", "Vincent", "Weston", "Nafuna", "Goku", "Zelda", "Lennox", "Leonardo", "Jordan", "Betty", "Adriana", "Porco", "Videl", "Vaclav", "Anya", "Hector", "Cadence", "Archie", "Peter", "Blaze", "Paras", "Sam", "Kobe", "Liza", "Bort", "Augustus", "Prince", "Drogo", "Hagar", "Leah", "Ezekiel", "Renly", "Abel", "Noah", "Mohammed", "Sen", "Ivy", "Miles", "Ryder", "Mukasa", "Gohan", "Leroy", "Juliet", "Angelo", "Rosso", "Adriatic", "Valeria", "Antonio", "Frollo", "Rocco", "Winston", "Salman", "Adonis", "Lyra", "Tybal"};
+		String[] arrstrLastName = {"Obi", "Wolf", "Vickers", "Wright", "Lazano", "Priestly", "Black", "Ben Hur", "Applecroft", "Patterby", "Hiram", "Tah", "Obama", "Rondon", "Scott", "Malaika", "Gurgi", "D'ath", "Sabat", "Mansburg", "Broley", "Son", "Jenkins", "Macbeth", "Shakespear", "Hamlet", "Costa", "Fields", "Carpenter", "Satan", "Mosley", "Salah", "Koke", "Bell", "Keane", "Harper", "Belmont", "Diallo", "Pope", "Fish", "Copper", "Price", "Shoora", "McDonald", "Matic", "Kirby", "Kenobi", "Ibbot", "Ibsen", "Zappa", "Qadir", "Quest", "Jager", "Jakab", "Jansen", "Danell", "Darzi", "Yamada", "Yanev", "Yoxall", "Young", "Fletcher", "Fabien", "Falco", "Fannon", "Ganon", "Farmer", "Fay", "Capello", "Carey", "Carlson"};
 		strFirstName = arrstrFirstName[rand.nextInt(arrstrFirstName.length)];
-		strMiddleName = arrstrMiddleName[rand.nextInt(arrstrMiddleName.length)];
+		strMiddleName = arrstrFirstName[rand.nextInt(arrstrFirstName.length)];
 		strLastName = arrstrLastName[rand.nextInt(arrstrLastName.length)];
 		//push the fist name, second name and third name to the POM 
 		addEmployee addEmp = PageFactory.initElements(driver, addEmployee.class);
