@@ -98,6 +98,7 @@ public class assessmentSteps {
 	public void viewUserInformation() {
 		viewPersonalDetails viewEmp = PageFactory.initElements(driver, viewPersonalDetails.class);
 		test1.log(LogStatus.INFO, "Check login button");
+		//If the users name is on the page with there then it will return true. If it does not the test will fail.
 		try {
 			assertTrue(viewEmp.checkPageDetails(strFirstName,strMiddleName,strLastName));
 			test1.log(LogStatus.PASS, "I can see information about the user: " + strFirstName + " " + strMiddleName + " " + strLastName);
